@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "b5d2acf7-686e-4b52-a65e-73c1eda0c8b3",
+		"name": "WeatherAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25029778"
+	},
+	"item": [
+		{
+			"name": "CurrentWeather",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/weather/current/?location=London",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"weather",
+						"current",
+						""
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "London"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CurrentWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/current/?location=Boston",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"current",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Boston"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "CurrentWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/current/?location=Sarajevo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"current",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Sarajevo"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "ForecastWeather",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/weather/forecast/?location=London",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"weather",
+						"forecast",
+						""
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "London"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ForecastWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/forecast/?location=Boston",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"forecast",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Boston"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "ForecastWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/forecast/?location=Sarajevo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"forecast",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Sarajevo"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "HistoryWeather",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/weather/history/?location=Sarajevo&start=2023-05-01&end=2023-05-10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"weather",
+						"history",
+						""
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Sarajevo"
+						},
+						{
+							"key": "start",
+							"value": "2023-05-01"
+						},
+						{
+							"key": "end",
+							"value": "2023-05-10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "HistoryWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/history/?location=Boston&start=2023-05-01&end=2023-05-15",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"history",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Boston"
+								},
+								{
+									"key": "start",
+									"value": "2023-05-01"
+								},
+								{
+									"key": "end",
+									"value": "2023-05-15"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "HistoryWeather",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/weather/history/?location=London&start=2023-05-05&end=2023-05-10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"weather",
+								"history",
+								""
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "London"
+								},
+								{
+									"key": "start",
+									"value": "2023-05-05"
+								},
+								{
+									"key": "end",
+									"value": "2023-05-10"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

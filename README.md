@@ -33,4 +33,4 @@ http://localhost:8000/api/weather/history/?location={location}&start={start_date
 (History is currently not allowed since the API is a free version, you can check it by going to: http://127.0.0.1:8000/api/weather/history/?location=Sarajevo&start=2023-05-01&end=2023-05-10)
 
 Postman json file is located within the WeatherApp folder.
-To access Swagger UI API Documentation go to the next url: http://localhost:8000/api/docs/
+To access Swagger UI API Documentation go to the next url: http://localhost:8000/swagger/
