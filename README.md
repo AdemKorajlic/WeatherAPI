@@ -12,6 +12,8 @@ Install pip and dependencies:
 -pip install logging 
 -pip install django_http_basic_auth
 -pip install django-rest-swagger
+-pip install drf-yasg django-filter         
+-pip install pyyaml   
 
 Run next commands to run the server:
 
